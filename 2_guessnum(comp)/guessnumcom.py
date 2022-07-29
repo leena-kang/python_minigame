@@ -12,4 +12,4 @@ def guess(x):
     print(f"Congrats! You have guessed the number {random_number} correctly")
 
 x = int(input("Enter a number to range from 1 to __ : "))
-guess()
+guess(x)
