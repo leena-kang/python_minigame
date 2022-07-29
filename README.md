@@ -1,4 +1,4 @@
-# 12 Beginner Projects Using Python 
+# **12 Beginner Projects Using Python** 
 
 ## From Youtube video "12 Beginner Python Projects - Coding Course" from Youtube channgel freeCodeCamp.org (Kylie Ying)
 
