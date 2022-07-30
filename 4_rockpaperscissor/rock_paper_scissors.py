@@ -4,10 +4,8 @@ def play():
     user = input("Choose your fighter \n'r' for rock, 'p' for paper, 's' for scissors \n").lower()
     computer = random.choice(['r', 'p', 's'])
 
-    while user == computer:
-        print("It's a tie ! PLAY AGAIN!")
-        user = input("Choose your fighter \n'r' for rock, 'p' for paper, 's' for scissors \n").lower()
-    computer = random.choice(['r', 'p', 's'])
+    if user == computer:
+        return "It's a tie ! PLAY AGAIN!"
 
     if is_win(user, computer):
         return "YES QUEEN YOU WON!"
