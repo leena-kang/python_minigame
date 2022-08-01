@@ -1,17 +1,24 @@
 class TicTacToe:
     def __init__(self):
-        self.board = [' ' for _ in range(9)] # we will use a single list to represent 3x3 board
-        self.current_winner = None          # keep track of winner
+        self.board = [' ' for _ in range(9)]    # will use single list to rep 3x3 board
+        self.current_winner = None      # keep track of winner
     
-    def print_board(self):
-        # for getting the rows
-        for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
+    def print_board(self): 
+        # just for getting the rows
+        for row in [self.board[i*3: (i+1)*3] for i in range(3)]:
             print('| ' + ' | '.join(row) + ' |')
-
-    @staticmethod # static method : dont need to pass in a "self" since it doesnt relate to any board
-    def print_board_nums():
-        # 0 | 1 | 2 etc (tells us what number corresponds to what box)
+        
+    @staticmethod
+    def print_board_num():
+        # 0 | 1 | 2 etc (tells what num corresponds to what box)
         number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range(3)]
-
         for row in number_board:
             print('| ' + ' | '.join(row) + ' |')
+
+    def available_moves(self):
+        moves = []
+        for (i, spot) in enumerate(self.board):
+            # ['x', 'x', 'o'] --> [(0, 'x'), (1, 'x'), (2, 'o')]
+            if spot == ' ':
+                moves.append(i)
+        return moves
