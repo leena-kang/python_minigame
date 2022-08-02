@@ -10,6 +10,8 @@ This project consists of the following 12 projects to refine Python skills:
 4) Rock Paper Scissors 
 5) Hangman
 6) Tic-Tac-Toe
+7) Mini Quiz
+
 7) Tic-Tac-Toe AI
 8) Binary Search 
 9) Minesweeper 

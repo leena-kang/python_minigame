@@ -1,8 +1,10 @@
+import time
 import random
 
 def play():
     user = input("Choose your fighter \n'r' for rock, 'p' for paper, 's' for scissors \n").lower()
     computer = random.choice(['r', 'p', 's'])
+    time.sleep(0.8)
 
     if user == computer:
         return "It's a tie ! PLAY AGAIN!"
